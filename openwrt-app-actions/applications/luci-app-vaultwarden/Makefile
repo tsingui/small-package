@@ -2,15 +2,15 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_VERSION:=1.0.0-20221121
+PKG_VERSION:=1.0.0-20221118
 PKG_RELEASE:=
 
-LUCI_TITLE:=LuCI support for CodeServer
+LUCI_TITLE:=LuCI support for Vaultwarden
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+docker +luci-lib-taskd
 
-define Package/luci-app-codeserver/conffiles
-/etc/config/codeserver
+define Package/luci-app-vaultwarden/conffiles
+/etc/config/vaultwarden
 endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
